@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meenakshi Pathiyil - Resume</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
+    /* --- Base --- */
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f6f7f9; /* soft off-white */
+      color: #2e2f33; /* neutral dark gray */
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    /* --- Header --- */
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: #ffffff;
+      color: #2c2c2c;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    .contact {
+      margin-top: 12px;
+      font-size: 1em;
+      color: #555;
+    }
+
+    .contact a {
+      color: #3a6ea5; /* soft steel-blue accent */
+      text-decoration: none;
+      margin: 0 8px;
+      font-weight: 500;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+      color: #264e73;
+    }
+
+    /* --- Sections --- */
+    section {
+      background: #ffffff;
+      padding: 25px 30px;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+      margin-bottom: 30px;
+      border: 1px solid rgba(0,0,0,0.05);
+    }
+
+    section h2 {
+      margin-top: 0;
+      font-weight: 600;
+      font-size: 1.3em;
+      color: #2f3e51;
+      border-left: 4px solid #a3c0d3; /* faint accent bar */
+      padding-left: 10px;
+      margin-bottom: 12px;
+    }
+
+    ul {
+      margin: 10px 0;
+      padding-left: 22px;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    /* --- Links --- */
+    a {
+      color: #3a6ea5;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    a:hover {
+      color: #264e73;
+      text-decoration: underline;
+    }
+
+    /* --- Divider line between sections --- */
+    section:not(:last-child)::after {
+      content: "";
+      display: block;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(0,0,0,0.05), transparent);
+      margin-top: 20px;
+    }
+
+    .project-links {
+  margin-top: 4px;
+  font-size: 0.95em;
+}
+
+.project-links a {
+  color: #3a6ea5;
+  text-decoration: none;
+  margin-right: 10px;
+  font-weight: 500;
+}
+
+.project-links a:hover {
+  color: #264e73;
+  text-decoration: underline;
+}
+
+.projects ul li:not(:last-child) {
+  border-bottom: 1px solid rgba(0,0,0,0.07);
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+}
+
+    /* --- Responsive --- */
+    @media (max-width: 600px) {
+      .container {
+        margin: 30px auto;
+      }
+      header h1 {
+        font-size: 2em;
+      }
+      section {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Meenakshi Pathiyil</h1>
+      <div class="contact">
+        Citizenship: USA ❖
+        <a href="mailto:meenakshi.pathiyil@gmail.com">meenakshi.pathiyil@gmail.com</a> ❖
+        626-632-3970 <br />
+        <a href="https://linkedin.com/in/meenakshi-pathiyil" target="_blank">LinkedIn</a> ❖
+        <a href="https://github.com/MeenakshiPathiyil" target="_blank">GitHub</a>
+      </div>
+    </header>
+
+    <section>
+      <h2>Education</h2>
+      <p><strong>PES University</strong> (2023–2027)<br />
+        Bachelor’s Degree, Computer Science</p>
+      <ul>
+        <li>Member at ACM-W — Mentored participants for hackathons</li>
+        <li>Member at Rotaract Club — Helped organize fund-raising events</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Certifications & Achievements</h2>
+      <ul>
+        <li>SANS Foundations: Computers, Technology & Security (Valid from Jan 2025)</li>
+        <li>ISC2 CC - Certified in Cybersecurity (Valid from July 2025)</li>
+        <li>Finalist InGenius 12.0 Hackathon</li>
+      </ul>
+    </section>
+
+    <section class="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li>
+            <strong><a href="https://github.com/MeenakshiPathiyil/DDoSDefender" target="_blank">DDoS Defender</a></strong> <br>
+            A Python-based DDoS detection system that monitors TCP/SSL traffic, detects SYN flood attacks, and dynamically blocks malicious IPs using iptables.
+            <div class="project-links">
+                <a href="https://github.com/MeenakshiPathiyil/DDoSDefender" target="_blank">Github</a>
+            </div>
+        </li>
+
+        <li>
+            <strong><a href="https://github.com/MeenakshiPathiyil/AI-Driven-Tool-for-Automated-Forensic-Timeline-Analysis" target="_blank">AI-Driven Forensic Timeline Analysis</a></strong> <br> 
+            An AI-driven tool that automates the analysis of digital forensic timelines generated by log2timeline by parsing CSV outputs, categorizing and correlating events, detecting anomalies, and generating high-level summaries for investigators.
+            <div class="project-links">
+                <a href="https://github.com/MeenakshiPathiyil/AI-Driven-Tool-for-Automated-Forensic-Timeline-Analysis" target="_blank">Backend</a>
+                <a href="https://github.com/MeenakshiPathiyil/AI-Driven-Tool-for-Automated-Forensic-Timeline-Analysis-Frontend" target="_blank">Frontend</a>
+            </div>
+        </li>
+        <li>
+            <strong><a href="https://github.com/MeenakshiPathiyil/Artifact-Extractor-for-Windows-System" target="_blank">Artifact Extractor for Windows System</a></strong> <br> 
+            The AEWS is a Python program that utilizes the 'psutil' and 'pandas' libraries to gather essential information about processes, services, memory usage, disk space, and logged-in users on the system and creates a dataframe for further analysis.
+            <div class="project-links">
+                <a href="https://github.com/MeenakshiPathiyil/Artifact-Extractor-for-Windows-System" target="_blank">Github</a>
+            </div>
+        </li>
+        <li>
+            <strong><a href="https://github.com/MeenakshiPathiyil/AWS-CloudTrail-Log-Analysis" target="_blank">AWS CloudTrail Log Analysis</a></strong> <br> 
+            A program that is designed to take a JSON file containing AWS CloudTrail logs as input and convert it into a pandas DataFrame for further analysis.
+            <div class="project-links">
+                <a href="https://github.com/MeenakshiPathiyil/AWS-CloudTrail-Log-Analysis" target="_blank">Github</a>
+            </div>
+        </li>
+        <li>
+            <strong><a href="https://github.com/MeenakshiPathiyil/Domain-Whois-Data-Analysis" target="_blank">Whois Lookup & Analysis</a></strong> <br> 
+            A program that allows users to analyze domain names by retrieving 'whois' data and creating a dataframe for further analysis.
+            <div class="project-links">
+                <a href="https://github.com/MeenakshiPathiyil/Domain-Whois-Data-Analysis" target="_blank">Github</a>
+                <a href="https://github.com/MeenakshiPathiyil/Whois-Lookup" target="_blank">Github</a>
+            </div>
+        </li>
+        <li>
+            <strong><a href="https://pkmaups.com/" target="_blank">PKMAUP School Website</a></strong> <br> 
+            Responsible for the creation and continuous maintenance of the official production website for the school. Built using React.
+            <div class="project-links">
+                <a href="https://pkmaups.com" target="_blank">Website</a>
+                <a href="https://github.com/MeenakshiPathiyil/PKMAUPS_new" target="_blank">Github</a>
+            </div>
+        </li>
+        <li>
+            <strong><a href="https://github.com/MeenakshiPathiyil/URLShortener" target="_blank">URL Shortener</a></strong> <br> 
+            Developed a web application for URL shortening, enabling users to generate short links and redirect them to the original URLs, using FastAPI, NextJS and TinyDB.
+            <div class="project-links">
+                <a href="https://github.com/MeenakshiPathiyil/URLShortener-frontend" target="_blank">Frontend</a>
+                <a href="https://github.com/MeenakshiPathiyil/URLShortener" target="_blank">Backend</a>
+            </div>
+        </li>
+        <li>
+            <strong><a href="https://github.com/MeenakshiPathiyil/RouteGuard" target="_blank">RouteGuard (ongoing)</a></strong> <br> 
+            Developed an app that alerts users during travel if they deviate from the correct route to their destination, using Flutter.
+            <div class="project-links">
+                <a href="https://github.com/MeenakshiPathiyil/RouteGuard" target="_blank">Github</a>
+            </div>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li><strong>Cybersecurity & Cloud Security:</strong> Wireshark, tcpdump, ISO/IEC 27001, Metasploit, Nmap, Dirb, Encryption, Steganography, Cloud Security</li>
+        <li><strong>Operating Systems & Tools:</strong> Kali Linux, Linux, NS-2</li>
+        <li><strong>Programming & Scripting:</strong> Python, C, C++, SQL, JavaScript</li>
+        <li><strong>Web Development:</strong> HTML, CSS, React, NodeJS, ExpressJS, MongoDB</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Extra Curricular</h2>
+      <p>Kalaripayattu (Indian Martial Arts) – National-Level Athlete, 2-time state medalist.</p>
+    </section>
+  </div>
+</body>
+</html>
